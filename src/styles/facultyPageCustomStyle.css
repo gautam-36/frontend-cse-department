@@ -1,0 +1,83 @@
+.custom-card {
+  height: 450px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: 1s ease;
+
+  /* Adjust the shadow properties as needed */
+}
+
+.custom-card:hover {
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add any other custom styles as needed */
+
+.image-container {
+  margin-top: 30px;
+  /* border: 1px solid yellow; */
+  height: 200px;
+}
+
+
+.custom-image {
+  /* margin-top: 5px; */
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.custom-card-body {
+  /* border: 1px solid green; */
+  align-items: center;
+}
+
+.custom-card-title {
+  margin-top: 2px;
+  font-size: 18px;
+  color: rgb(96, 96, 224);
+  font-weight: 400;
+}
+
+.custom-card-text {
+  /* border: 1px solid green; */
+}
+
+.custom-designation {
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+  font-weight: 400;
+}
+
+.custom-about {
+  margin: 0;
+  color: rgb(118, 117, 117);
+  /* font-weight: 400; */
+  margin-bottom: 2px;
+
+}
+
+.custom-publication {
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+}
+
+.custom-card-btn {
+  background-color: rgb(39, 39, 91);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 3px 3px;
+  align-items: center;
+  border: none;
+  transition: all 0.5s ease;
+  letter-spacing: 0.5px;
+
+
+}
+
+.custom-card-btn:hover {
+  background-color: green;
+  cursor: pointer;
+}

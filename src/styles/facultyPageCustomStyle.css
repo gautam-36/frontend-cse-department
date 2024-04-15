@@ -7,9 +7,9 @@
   /* Adjust the shadow properties as needed */
 }
 
-.custom-card:hover {
+/* .custom-card:hover {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Add any other custom styles as needed */
 
@@ -36,7 +36,7 @@
 .custom-card-title {
   margin-top: 2px;
   font-size: 18px;
-  color: rgb(96, 96, 224);
+  /* color: rgb(96, 96, 224); */
   font-weight: 400;
 }
 

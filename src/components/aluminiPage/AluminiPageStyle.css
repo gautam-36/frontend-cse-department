@@ -1,72 +1,113 @@
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
-  transition: .3s ease-in-out;
-  animation-duration: 0.7s;
-  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
-  animation-fill-mode: backwards;
-  margin-bottom: 10px;
+.outerBorder {
+  /* border: 1px solid red ; */
+  /* background-color: rgb(237, 231, 231); */
+  width: 80%;
+  border-radius: 20px;
+  margin: auto;
+margin-top: 150px;
+padding: 18px 0px ;
+ box-shadow: 0 0 10px rgba(190, 185, 185, 0.1),
+ /* Top shadow */
+ 0 0 10px rgba(0, 0, 0, 0.1) ,
+ /* Bottom shadow */
+ 10px 0 10px rgba(0, 0, 0, 0.1) ,
+ /* Right shadow */
+ -10px 0 10px rgba(0, 0, 0, 0.1) ;
+ /* Left shadow */
+
+}
+/* .innerBorder{
+  border: 1px solid red ;
+  width: 80%;
+} */
+.custom-card {
+  height: 450px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  transition: 1s ease;
+  margin-top: 20px;
+
+  
+
+  /* Adjust the shadow properties as needed */
 }
 
-.pop {
-  animation-name: pop;
+/* .custom-card:hover {
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+} */
+
+/* Add any other custom styles as needed */
+
+.image-container {
+  margin-top: 10px;
+  /* border: 1px solid yellow; */
+  height: 160px;
+    /* border: 1px solid red; */
+   /* margin-bottom: -20px; */
+
 }
 
-@keyframes pop {
-  0% {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-  }
 
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
+.custom-image {
+  /* margin-top: 5px; */
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 1px solid gray;
+
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+.custom-card-body {
+  /* border: 1px solid green; */
+  align-items: center;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+.custom-card-title {
+  font-size: 18px;
+  /* color: rgb(96, 96, 224); */
+  font-weight: 400;
 }
 
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
+.custom-card-text {
+  /* border: 1px solid green; */
+  padding: 0;
+  /* margin: 0; */
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
+.custom-designation {
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+  font-weight: 400;
 }
 
-/* Style the back side */
-.flip-card-back {
-  background-color: #5bc0de;
+.custom-about {
+  margin: 0;
+  color: rgb(118, 117, 117);
+  /* font-weight: 400; */
+  margin-bottom: 2px;
+
+}
+
+.custom-publication {
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+}
+
+.custom-card-btn {
+  background-color: rgb(39, 39, 91);
   color: white;
-  transform: rotateY(180deg);
+  font-size: 14px;
+  text-align: center;
+  padding: 3px 3px;
+  align-items: center;
+  border: none;
+  transition: all 0.5s ease;
+  letter-spacing: 0.5px;
+
+
 }
 
-.flip-card-back h5 {
-  margin-top: 30px;
+.custom-card-btn:hover {
+  background-color: green;
+  cursor: pointer;
 }

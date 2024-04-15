@@ -23,7 +23,6 @@ const FacultyPage = () => {
     <div style={{ marginTop: '100px' }}>
       <h3 className="text-center mt-2"><b>Computer Science Engineering Faculty</b></h3>
       <p className="mt-4" style={{ textAlign: 'center' }}>The Department of Computer Science and Engineering is a pioneering academic centre for education at undergraduate and postgraduate level. The Department has grown many folds in academics and infrastructure since its inception. The Department has qualified and experienced faculty. Strong research groups exist in the area of Data Mining, Soft Computing, Artificial Intelligence, Machine Learning, Ad-hoc Mobile Networks, Network Security, Software Engineering, and Image Processing.</p>
-
       <Tabs
         defaultActiveKey="Dean"
         id="justify-tab-example"
@@ -40,10 +39,10 @@ const FacultyPage = () => {
                       <Card.Img variant="left" src={member.image} className="custom-image" />
                     </div>
                     <Card.Body className='custom-card-body'>
-                      <Card.Title className='custom-card-title'>{member.name}</Card.Title>
+                      <Card.Title style={{color:'blue'}} className='custom-card-title'>{member.name}</Card.Title>
                       <Card.Text className='custom-card-text'>
                         <p className='custom-designation'>{member.designation}</p>
-                        <p className='custom-about'>Expertise of faculty members</p>
+                        <p className='custom-about'>{member.expertise ? member.expertise.substring(0, 50) : ''}...</p>
                         <p className='custom-publication'>21 publications</p>
                       </Card.Text>
                       <button className='custom-card-btn' href={member.bioData}>View Profile</button>
@@ -66,10 +65,10 @@ const FacultyPage = () => {
                       <Card.Img variant="left" src={member.image} className="custom-image" />
                     </div>
                     <Card.Body className='custom-card-body'>
-                      <Card.Title className='custom-card-title'>{member.name}</Card.Title>
+                      <Card.Title style={{ color: 'blue' }}  className='custom-card-title'>{member.name}</Card.Title>
                       <Card.Text className='custom-card-text'>
                         <p className='custom-designation'>{member.designation}</p>
-                        <p className='custom-about'>Expertise of faculty members</p>
+                        <p className='custom-about'>{member.expertise ? member.expertise.substring(0, 50) : ''}...</p>
                         <p className='custom-publication'>21 publications</p>
                       </Card.Text>
                       <button className='custom-card-btn' href={member.bioData}>View Profile</button>
@@ -81,7 +80,6 @@ const FacultyPage = () => {
             })}
           </div>
         </Tab>
-
         <Tab eventKey="Professors" title="Professors">
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
             {facultyData.map(member => {
@@ -92,11 +90,11 @@ const FacultyPage = () => {
                       <Card.Img variant="left" src={member.image} className="custom-image" />
                     </div>
                     <Card.Body className='custom-card-body'>
-                      <Card.Title className='custom-card-title'>{member.name}</Card.Title>
+                      <Card.Title style={{ color: 'blue' }}  className='custom-card-title'>{member.name}</Card.Title>
                       <Card.Text className='custom-card-text'>
                         <p className='custom-designation'>{member.designation}</p>
-                        <p className='custom-about'>Expertise of faculty members</p>
-                        <p className='custom-publication'>21 publications</p>
+                        <p className='custom-about'>{member.expertise ? member.expertise.substring(0, 50) : ''}...</p>
+                        <p className='custom-publication'>21publications</p>
                       </Card.Text>
                       <button className='custom-card-btn' href={member.bioData}>View Profile</button>
                     </Card.Body>
@@ -107,22 +105,20 @@ const FacultyPage = () => {
             })}
           </div>
         </Tab>
-
-
         <Tab eventKey="Associate Professors" title="Associate Professors">
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
             {facultyData.map(member => {
-              if (member.designation === 'Associate Professors') {
+              if (member.designation === 'Associate Professor') {
                 return (
                   <Card className="custom-card" key={member._id} style={{ width: '18rem', textAlign: 'center' }} >
                     <div style={{ textAlign: 'center' }} className="image-container">
                       <Card.Img variant="left" src={member.image} className="custom-image" />
                     </div>
                     <Card.Body className='custom-card-body'>
-                      <Card.Title className='custom-card-title'>{member.name}</Card.Title>
+                      <Card.Title style={{ color: 'blue' }}  className='custom-card-title'>{member.name}</Card.Title>
                       <Card.Text className='custom-card-text'>
                         <p className='custom-designation'>{member.designation}</p>
-                        <p className='custom-about'>Expertise of faculty members</p>
+                        <p className='custom-about'>{member.expertise ? member.expertise.substring(0, 50) : ''}...</p>
                         <p className='custom-publication'>21 publications</p>
                       </Card.Text>
                       <button className='custom-card-btn' href={member.bioData}>View Profile</button>
@@ -145,10 +141,10 @@ const FacultyPage = () => {
                       <Card.Img variant="left" src={member.image} className="custom-image" />
                     </div>
                     <Card.Body className='custom-card-body'>
-                      <Card.Title className='custom-card-title'>{member.name}</Card.Title>
+                      <Card.Title style={{ color: 'blue' }}  className='custom-card-title'>{member.name}</Card.Title>
                       <Card.Text className='custom-card-text'>
                         <p className='custom-designation'>{member.designation}</p>
-                        <p className='custom-about'>Expertise of faculty members</p>
+                        <p className='custom-about'>{member.expertise ? member.expertise.substring(0, 50) : ''}...</p>
                         <p className='custom-publication'>21 publications</p>
                       </Card.Text>
                       <button className='custom-card-btn' href={member.bioData}>View Profile</button>

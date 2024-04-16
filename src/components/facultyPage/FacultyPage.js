@@ -156,6 +156,31 @@ const FacultyPage = () => {
             })}
           </div>
         </Tab>
+        <Tab eventKey="Faculty Members on Contracts" title="Faculty Members on Contracts">
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+            {facultyData.map(member => {
+              if (member.designation === 'Assistant Professor') {
+                return (
+                  <Card className="custom-card" key={member._id} style={{ width: '18rem', textAlign: 'center' }} >
+                    <div style={{ textAlign: 'center' }} className="image-container">
+                      <Card.Img variant="left" src={member.image} className="custom-image" />
+                    </div>
+                    <Card.Body className='custom-card-body'>
+                      <Card.Title style={{ color: 'blue' }}  className='custom-card-title'>{member.name}</Card.Title>
+                      <Card.Text className='custom-card-text'>
+                        <p className='custom-designation'>{member.designation}</p>
+                        <p className='custom-about'>{member.expertise ? member.expertise.substring(0, 50) : ''}...</p>
+                        <p className='custom-publication'>21 publications</p>
+                      </Card.Text>
+                      <button className='custom-card-btn' href={member.bioData}>View Profile</button>
+                    </Card.Body>
+                  </Card>
+                );
+              }
+              return null;
+            })}
+          </div>
+        </Tab>
       </Tabs>
     </div>
   );

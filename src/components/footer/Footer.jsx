@@ -15,13 +15,13 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3 className="section-title">Quick Links</h3>
                     <ul>
-                        <Link to = "/"> <li>Home</li></Link>
-                        <Link to="/about"> <li>About</li></Link>
-                        <Link to="/faculty"> <li>Faculty</li></Link>
-                        <Link to="/alumni"> <li>Alumni</li></Link>
-                        <Link to= "/infrastructure"> <li>Infrastructure</li></Link>
-                        <Link to = "/placement"> <li>Placement</li></Link>
-                        <Link to = "/departments"> <li>Departments</li></Link>
+                        <Link to = "/" style={{textDecoration:"none"}}> <li>Home</li></Link>
+                        <Link to="/about" style={{ textDecoration: "none" }}> <li>About</li></Link>
+                        <Link to="/faculty" style={{ textDecoration: "none" }}> <li>Faculty</li></Link>
+                        <Link to="/alumni" style={{ textDecoration: "none" }}> <li>Alumni</li></Link>
+                        <Link to="/infrastructure" style={{ textDecoration: "none" }}> <li>Infrastructure</li></Link>
+                        <Link to="/placement" style={{ textDecoration: "none" }}> <li>Placement</li></Link>
+                        <Link to="/departments" style={{ textDecoration: "none" }}> <li>Departments</li></Link>
                     </ul>
                 </div>
                 <div className="footer-section">

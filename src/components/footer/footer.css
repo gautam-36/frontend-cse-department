@@ -34,9 +34,9 @@
     bottom: 0;
     left: 0;
     width: 120px;
-    height: 3px;
-    background-color: transparent;
-    border: 1px solid #fff;
+    height: 2px;
+    background-color: #fff;
+    /* border: 1px solid #fff; */
 }
 
 .footer-section p {
@@ -49,20 +49,22 @@
     list-style: none;
     padding: 0;
     margin: 0;
+      text-decoration: none;
 }
 
-.footer-section ul li {
-    margin-bottom: 10px;
-}
 
 .footer-section ul li {
+    margin-bottom: 5px;
     color: rgb(173, 169, 169);
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s ease;
+    transition: all 0.5s ease;
+
+
 }
 
-.footer-section ul li a:hover {
+.footer-section ul li:hover {
+    text-decoration: underline;
     color: #fff;
 }
 

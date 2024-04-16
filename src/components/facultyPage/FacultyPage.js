@@ -36,7 +36,7 @@ const FacultyPage = () => {
                 return (
                   <Card className="custom-card" key={member._id} style={{ width: '18rem', textAlign: 'center' }} >
                     <div style={{ textAlign: 'center' }} className="image-container">
-                      <Card.Img variant="left" src={member.image} className="custom-image" />
+                      <Card.Img variant="left" src={member.image ? member.image : "https://tse4.mm.bing.net/th?id=OIP.rQeqEJ4PlccEwEnwub7eEAHaHw&pid=Api&P=0&h=180"} className="custom-image" />
                     </div>
                     <Card.Body className='custom-card-body'>
                       <Card.Title style={{color:'blue'}} className='custom-card-title'>{member.name}</Card.Title>
@@ -62,7 +62,7 @@ const FacultyPage = () => {
                 return (
                   <Card className="custom-card" key={member._id} style={{ width: '18rem', textAlign: 'center' }} >
                     <div style={{ textAlign: 'center' }} className="image-container">
-                      <Card.Img variant="left" src={member.image} className="custom-image" />
+                      <Card.Img variant="left" src={member.image ? member.image : "https://tse4.mm.bing.net/th?id=OIP.rQeqEJ4PlccEwEnwub7eEAHaHw&pid=Api&P=0&h=180"} className="custom-image" />
                     </div>
                     <Card.Body className='custom-card-body'>
                       <Card.Title style={{ color: 'blue' }}  className='custom-card-title'>{member.name}</Card.Title>

@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../components/commoncomponents/Navbar';
 import AluminiPage from '../components/aluminiPage/AluminiPage';
+import Footer from '../components/footer/Footer';
 
 const AluminiScreen = () => {
   return (
     <div>
-        <Navbar/>
-        <AluminiPage/>
+      <Navbar />
+      <AluminiPage />
+      <Footer />
     </div>
   )
 }

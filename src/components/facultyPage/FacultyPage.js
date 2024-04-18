@@ -134,7 +134,7 @@ const FacultyPage = () => {
         <Tab eventKey="Assistant Professors" title="Assistant Professors">
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
             {facultyData.map(member => {
-              if (member.designation === 'Assistant Professor') {
+              if (member.designation === 'Assistant Professor' && member.facultyType==='Permanent') {
                 return (
                   <Card className="custom-card" key={member._id} style={{ width: '18rem', textAlign: 'center' }} >
                     <div style={{ textAlign: 'center' }} className="image-container">
@@ -159,7 +159,7 @@ const FacultyPage = () => {
         <Tab eventKey="Faculty Members on Contracts" title="Faculty Members on Contracts">
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
             {facultyData.map(member => {
-              if (member.designation === 'Assistant Professor') {
+              if (member.designation === 'Assistant Professor' && member.facultyType === 'Contractual') {
                 return (
                   <Card className="custom-card" key={member._id} style={{ width: '18rem', textAlign: 'center' }} >
                     <div style={{ textAlign: 'center' }} className="image-container">

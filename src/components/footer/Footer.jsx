@@ -21,7 +21,7 @@ const Footer = () => {
                         <Link to="/alumni" style={{ textDecoration: "none" }}> <li>Alumni</li></Link>
                         <Link to="/infrastructure" style={{ textDecoration: "none" }}> <li>Infrastructure</li></Link>
                         <Link to="/placement" style={{ textDecoration: "none" }}> <li>Placement</li></Link>
-                        <Link to="/departments" style={{ textDecoration: "none" }}> <li>Departments</li></Link>
+                        {/* <Link to="/departments" style={{ textDecoration: "none" }}> <li>Departments</li></Link> */}
                     </ul>
                 </div>
                 <div className="footer-section">

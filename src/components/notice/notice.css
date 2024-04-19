@@ -1,0 +1,92 @@
+.announcements {
+    /* background-color: rgb(43 48 53); */
+    color: #fff;
+    padding: 5rem;
+    /* border: 1px solid green; */
+}
+
+.header {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 1rem;
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: white;
+    color: #008000;
+    width: 350px;
+    font-size: 20px;
+}
+
+.tab.active {
+    background-color: green;
+    color: #fff;
+}
+
+.circular {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    height: 400px;
+    /* width: 350px; */
+    /* border: 1px solid red; */
+    /* Adjust this value to control the visible height */
+}
+
+.announcement {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: scroll 5s linear infinite;
+    /* Adjusted duration */
+    animation-timing-function: linear;
+    /* Added timing function */
+    /* border: 1px solid yellow; */
+    cursor: pointer;
+}
+
+.view-all{
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+
+    background-color: #008000;
+
+}
+.view-all:hover{
+    /* color: #008000; */
+    background-color: #fff;
+    color: green;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Delay animation for each item */
+.announcement:nth-child(2) {
+    animation-delay: 1s;
+    /* Adjusted delay */
+}
+
+.announcement:nth-child(3) {
+    animation-delay: 2s;
+    /* Adjusted delay */
+}
+
+/* Add more delays for additional items */
+
+.date {
+    font-weight: bold;
+}

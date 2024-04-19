@@ -36,11 +36,12 @@ function OffcanvasExample() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/about">About</Nav.Link>
+                  <Nav.Link href="/faculty">Notices</Nav.Link>
                   <Nav.Link href="/faculty">Faculty</Nav.Link>
                   <Nav.Link href="/alumini">Alumini</Nav.Link>
                   <Nav.Link href="/infrastructure">Infrastructure</Nav.Link>
                   <Nav.Link href="/placement">Placement</Nav.Link>
-                  <Nav.Link href="/departments">Departments</Nav.Link>
+                  <Nav.Link href="/credits">Credit</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

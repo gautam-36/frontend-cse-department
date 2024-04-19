@@ -1,7 +1,7 @@
 .partners-container {
   border: 3px solid gray;
   border-style:dashed;
-
+background-color:rgb(234, 234, 234);
   width: 90%;
   margin: 150px auto;
 }
@@ -26,17 +26,18 @@
 }
 
 .recruiters-logo{
-  border: 1px solid green;
-    margin: 20px 50px;
-    height: 150px ;
-    width: 200px;
+  /* border: 1px solid green; */
+    margin: 10px 20px;
+    height: 100px ;
+    /* width: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: gray; */
 }
 .recruiters-logo>img{
-    height: 100px;
-
-    border: 2px solid gray;
+    height: 40px;
+    /* border: 2px solid gray; */
+    object-fit: cover;
+    box-shadow: 0 5px 6px rgba(116, 112, 112, 0.1);
 }
